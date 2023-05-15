@@ -67,7 +67,7 @@ textarea.output {
   width: 100%;
   min-height: 100vh;
   font-size: 64px;
-  padding: 40px;
+  padding: 40px 80px;
 }
 
 div.colors {
