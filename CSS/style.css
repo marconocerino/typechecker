@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	font-family: 'Times New Roman', Arial;
+	font-size: 16px;
+	line-height: 1.25;
+	
+	background-color: #2a2a2a;
+	color: #fff;
+	margin-left: 280px;
+}
+
+section.options {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  
+  padding: 40px;
+}
+
+section.options h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+div.option {
+  margin-top: 20px;
+}
+
+div.option-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label span {
+  float: right;
+  font-style: italic;
+}
+
+input[type='text'] {
+  width: 100%;
+  background-color: #575757;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding: 5px 7px;
+}
+
+input[type='range'], select {
+  width: 100%;
+}
+
+textarea.output {
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 64px;
+  padding: 40px;
+}
+
+div.colors {
+  display: flex;
+  align-items: center;
+}
+
+div.colors div {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  text-align: center;
+  
+  margin-top: 10px;
+  margin-right: 10px;
+  
+  transition: border 0.2s;
+}
+
+div.colors div.selected {
+  border: 2px solid #fff;
+}
